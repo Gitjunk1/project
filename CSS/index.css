@@ -32,13 +32,16 @@
     font-style: normal;
     font-weight: normal;
     display: swap;
-}@font-face {
-    font-family: "Muli-BoldItalic";
+}
+@font-face {
+    font-family: "Muli-Semi-BoldItalic";
     src: url("./../assets/fonts/Muli-Semi-BoldItalic.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
+
+
 ul {
     list-style: none;
     margin: 0;  
@@ -68,32 +71,40 @@ body{
 .header__top {
     padding: 70px 100px  100px;
     border: 1px solid red;
-   display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
- }
-.header__nav {
+    width: 100%;
 }
+
 .nav__list {
     border: 1px solid red;
     display: flex;
+    font-weight: bold;
+    color: white;
+    font-family: Muli-Bold;
+    font-size: 16px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
 }
-.nav__list-item {
+
+.nav__list-item:last-child {
+    margin-right: 0px;
+}
+
+.nav__list-item+.header__list-item {
+    margin-left: 20px;
+}
+
+.nav__list-item:not(:last-child) {
     margin-right: 20px;
 }
-.header__list-item:last-child{
-    margin-right: 0;
-}
-    .header__list-item+.header__list-item{
-        margin-left: 20px;
-    }
-    .header__list-item:not(:last-child) {
-        margin-right: 20px;
-    }
+
 .nav__list-link {
-    font-size: 16px;
-    font-weight: 100;
+      font-weight: 100;
+    color: white;
 }
+
 .header__logo {
 }
 .logo {
@@ -102,17 +113,18 @@ body{
 }
 .logo__img {
 }
+
 .header__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 420px;
+    align-items: center; 
 }
 .header__personal {
-    width: 420px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 135px;
+
 }
 .personal {
 }
@@ -121,6 +133,11 @@ body{
     display: flex;
 }
 .personal__list-item {
+    display: inline-block;
+    margin-left: 35px;
+}
+.personal__list-item :first-child {
+    margin-left: 0px;
 }
 .personal__list-link {
 }
@@ -135,10 +152,25 @@ body{
     display: flex;
 }
 .social__list-item {
+    display: inline-block;
+    margin-left: 30px;
+}
+.social__list-item:first-child {
+    margin-left: 0px;
+
 }
 .social__list-link {
+    height: 35px;
+    width: 35px;
+    background-color: white; 
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
-.social__list-img {
+
+}
+.social__list-img { 
 }
 .header-content {
     border: 1px solid red;
@@ -158,13 +190,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 55px 0 0;
+    letter-spacing: -0.48px;
+    color: white;
+    line-height: 40px;
 }
 .btn--green {
     background-color: #0aa566;
 }
 .smoothies {
    padding: 100px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
+
 .smoothies__title {
     font-family: Muli-ExtraBold;
     font-size: 50px;
@@ -183,26 +223,36 @@ body{
     text-align: center;
     color: #1e1e1e;
     margin-top: 55px;
+    line-height: 1.94;
 
 }
 .smoothies__features {
     display: flex;
     flex-wrap: wrap;
-    max-width: 870px;
+    max-width: 1060px;
     margin: 0 auto;
     margin-top: 90px;
 }
 
 .smoothie__name {
     margin: 0;
-    padding: 0 90px;
+    width: 265px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .smoothie__icon-img {
- 
+    margin-bottom: 20px;
 }
+
 .smothie__sub-title {
+    margin: 30px;
+    letter-spacing: -0.5px;
 }
+
 .about {
     min-height: 100vh;
     background: url(../assets/images/backgrounds/third-section-img.png) no-repeat center/cover;

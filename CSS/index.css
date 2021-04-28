@@ -54,7 +54,7 @@ a:hover {
      color: inherit;
 }
 body{
-    font-family: 'Muli' sans-serif;  
+    font-family: "Muli" sans-serif;  
 }
 
 .header {
@@ -256,14 +256,30 @@ body{
 .about {
     min-height: 100vh;
     background: url(../assets/images/backgrounds/third-section-img.png) no-repeat center/cover;
+    display: flex;
 }
+
 .about__img {
 }
+
 .about__box {
+  
 }
+
 .about__title {
+    margin-left: 140px;
+    font-family: 'Muli-ExtraBold';
+    max-width: 690px;
+    font-size: 55px;
+    color: white;
+    line-height: 60px;
+    letter-spacing: -1.1px;
 }
 .about__list {
+    margin-left: 180px;
+    font-size: 21px;
+    line-height: 22px;
+    color: white;
 }
 .about__list-item {
 }
@@ -275,6 +291,7 @@ body{
 }
 .btn-yellow-br {
 }
+
 .products {
 
 }

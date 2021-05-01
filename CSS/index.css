@@ -248,12 +248,16 @@ body{
 }
 
 .smoothie__icon-img {
-    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+  
 }
 
 .smothie__sub-title {
     margin: 30px;
     letter-spacing: -0.5px;
+    font-family: 'Muli-ExtraBold';
+    color: #f2612d;
 }
 
 .about {
@@ -267,7 +271,6 @@ body{
 }
 
 .about__box {
-  
 }
 
 .about__title {
@@ -290,7 +293,7 @@ body{
 }
 .about__list-item {
     margin: 30px;
-    list-style-image: url(../assets/images/about/third-section\ icon.png);
+    list-style-image: url(../assets/images/about/third-section-icon.png);
 }
 
 .about__text {

@@ -63,6 +63,13 @@ body{
     background-position: center;
     background-size: cover;
     color: #fff;
+}
+
+.conteiner{
+    max-width: 1700px;
+}
+
+.header__wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +121,7 @@ body{
 .logo__img {
 }
 
-.header__wrapper{
+.header__inner{
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -134,13 +141,18 @@ body{
 }
 .personal__list-item {
     display: inline-block;
-    margin-left: 35px;
+    margin-left: 45px;
 }
 .personal__list-item :first-child {
     margin-left: 0px;
 }
 .personal__list-link {
 }
+
+.personal__item--cart{
+    
+}
+
 .personal__list-img {
 }
 .header__social {
@@ -202,9 +214,9 @@ body{
 }
 .smoothies {
    padding: 100px 0;
-   display: flex;
+  /* display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: center;*/
 }
 
 .smoothies__title {
@@ -411,7 +423,9 @@ body{
 .story__btn {
 }
 .story__img {
-}
+    margin-left: 1025px;
+    margin-top: 120px;
+
 .testimonials {
 }
 .testimonials__inner {

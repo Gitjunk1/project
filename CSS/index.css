@@ -65,7 +65,7 @@ body{
     color: #fff;
 }
 
-.conteiner{
+.container{
     max-width: 1700px;
 }
 
@@ -194,19 +194,23 @@ body{
     width: 280px;
     align-self: center;
     margin: 0 55px 0 0;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
 }
 
 .btn {
-    border-radius:35px;
+    border-radius: 30px;
     font-size: 24px;
     font-family: 'Muli-ExtraBold';
     padding: 0 38px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    letter-spacing: -0.48px;
     color: white;
-    line-height: 40px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 .btn--green {
@@ -233,17 +237,19 @@ body{
     color: white;
 }
 
-.smoothie__description {
+.smoothie__text {
     max-width: 915px;
     margin: 0 auto;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.text--black {
     font-family: Muli-Regular;
     font-size: 18px;
-    text-align: center;
-    color: #1e1e1e;
-    margin-top: 55px;
     line-height: 1.94;
-
 }
+
 .smoothies__features {
     display: flex;
     flex-wrap: wrap;
@@ -286,10 +292,10 @@ body{
 }
 
 .about__box {
+    margin-left: 142px;
 }
 
 .about__title {
-    margin-left: 142px;
     font-family: 'Muli-ExtraBold';
     max-width: 590px;
     font-size: 55px;
@@ -301,7 +307,6 @@ body{
  color: yellow;
 }
 .about__list {
-    margin-left: 142px;
     font-size: 21px;
     line-height: 22px;
     color: white;
@@ -325,10 +330,9 @@ body{
 .about__btn {
     background-color: transparent;
     border-color: #f8b231;
-    margin-left: 142px;
     margin-top: 50px;
-    height: 60px;
-    width: 380px;
+    min-height: 60px;
+    min-width: 380px;
 }
 
 .btn-yellow-br {
@@ -403,25 +407,23 @@ body{
 .products__btn {
     width: 204px;
     height: 60px;
-    margin-top: 65px;
-    margin-left: 138px;
     font-size: 21px;
-    margin-left: 138px;
+    margin: 65px 0px 0px 138px;
     padding: 22px 36px 18px;
-    border-radius: 30px;
     border: solid 2px;
     background-color: transparent;
 }
 
 .story {
 }
-.container {
-}
+
 .story__inner {
+    display: flex;
+    justify-content: center;
 }
+
 .story__title {
-    margin-left: 310px;
-    margin-top: 260px;
+    padding-top: 260px; 
     font-family: 'Muli-ExtraBold';
     font-size: 50px;
     font-weight: 800;
@@ -430,27 +432,33 @@ body{
 }
 
 .story__text {
-    width: 511px;
-    height: 118px;
-    margin: 43px 15px 60px 308px;
+    max-width: 511px;
+   /* padding-top: 43px;*/
     font-family: 'Muli-Regular';
     font-size: 18px;
     line-height: 1.94;
 }
 
 .story__btn {
+    min-width: 301px;
+    min-height: 60px;
+    margin-top: 60px;
 }
+
 .story__img {
-    margin-left: 1025px;
-    margin-top: 120px;
+    margin: 120px 0px 0px 206px; 
 }
 
 .testimonials {
+    background: url(../assets/images/backgrounds/fifth-section-img.png);
 }
 .testimonials__inner {
 }
+
 .testimonials__title {
+
 }
+
 .testimonials__title--big {
 }
 .testimonials__box {

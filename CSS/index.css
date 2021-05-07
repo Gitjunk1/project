@@ -67,6 +67,7 @@ body{
 
 .container{
     max-width: 1700px;
+    margin: 0 auto;
 }
 
 .header__wrapper{
@@ -263,7 +264,7 @@ body{
 
 .smoothie__name {
     margin: 0;
-    width: 265px;
+    width: calc(25% - 1.5px);
     height: 265px;
     display: flex;
     flex-direction: column;
@@ -271,17 +272,7 @@ body{
     justify-content: center;
     background-color: #fff;
 }
-.smoothie__features:last-child {
-    border: none;
-}
 
-.smoothie__features:nth-child(4) {
-    border-right: none;   
-}
-
-.smoothie__features:nth-child(1n + 5) {
-    border-bottom: none;
-}
 .smoothie__icon-img {
     width: 70px;
     height: 70px;
@@ -296,10 +287,9 @@ body{
 }
 
 .about {
-    /*min-height: 100vh;*/
     background: url(../assets/images/backgrounds/third-section-img.png) no-repeat center/cover;
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .about__img {
@@ -461,6 +451,7 @@ body{
 }
 
 .testimonials {
+    padding: 100px 0;
     background: url(../assets/images/backgrounds/fifth-section-img.png);
 }
 .testimonials__inner {
@@ -478,19 +469,22 @@ body{
 .testimonials__title--big {
     color: #f2612d;
 }
-.testimonials__box {
+.testimonials__wrapper {
+    display: flex;
+    justify-content: center;
 }
 
-.testimonials__wrapper{
-    max-width: 455px;
+.testimonials__box{
     min-height: 130px;
-    margin: 184px 59px 144px 593px;
+    margin-right: 60px;
 }
 
 .testimonials__quote {
+    display: block;
     font-family: 'Muli-Regular';
     font-size: 18px;
     line-height: 1.94;
+    max-width: 455px;
     color: white;
 }
 
@@ -502,7 +496,16 @@ body{
 }
 .testimonials__img {
 }
+.testemonials__control{
+    display: flex;
+    justify-content: center;
+}
+
 .testimonials__btn {
+    width: 30px;
+    height: 16px;
+    background-color: #fcb438;
+}
 }
 .blog {
 }

@@ -593,27 +593,57 @@ body{
     background: url(../assets/images/backgrounds/footer-img.png);
 }
 .footer__top {
+    display: flex;
+    justify-content: space-between;
 }
+
 .footer__logo {
+    padding: 133px 0 182px 103px;
 }
+
 .footer__info {
+    padding: 0 0 0 196px;
 }
+
 .info {
 }
 .footer__title {
 }
-.info__list {
+
+.title--white {
+    padding: 80px 0 35px 0;
+    font-family: 'Muli-ExtraBold';
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+    color: #ffffff;
 }
+
+.info__list {
+    font-family: 'Muli-Bold';
+    font-size: 18px;
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    color: #6d450c;
+}
+
+
 .info__list-item {
 }
+
 .footer__payment {
 }
+
 .payment {
 }
-.footer__payment-title {
+
+.footer__title {
+    padding-bottom: 35px;
 }
+
 .payment__img {
 }
+
 .footer__subscribe {
 }
 .subscribe {

@@ -55,6 +55,7 @@ a:hover {
 }
 body{
     font-family: "Muli" sans-serif;  
+    color: #fff;
 }
 
 .header {
@@ -62,7 +63,7 @@ body{
     background: url(../assets/images/backgrounds/main-img.png) no-repeat;
     background-position: center;
     background-size: cover;
-    color: #fff;
+
 }
 
 .container{
@@ -148,14 +149,22 @@ body{
 }
 
 .personal__item--cart{
-    width: 6px;
-    height: 7px;
+    width: 18px;
+    height: 18px;
     font-family: 'Muli-Regular';
     font-size: 10px;
-    line-height: 4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 0.2px;
     text-align: left;
     color: #000000;
+    background-color: white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .personal__list-img {
@@ -202,7 +211,7 @@ body{
 }
 
 .btn {
-    border-radius: 30px;
+    border-radius: 40px;
     font-size: 24px;
     font-family: 'Muli-ExtraBold';
     padding: 0 38px;
@@ -210,10 +219,10 @@ body{
     align-items: center;
     justify-content: space-between;
     color: white;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .btn--green {
@@ -231,16 +240,24 @@ body{
     text-align: center;
     margin: 0;
 }
-.title--orange {
-    font-family: Muli-ExtraBold;
+
+
+.title {
+    font-family: 'Muli-ExtraBold';
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
+}
+
+.title--orange {
     color: #f7ae3b;
 }
+
 .title--white {
-    font-family: 'Muli-ExtraBold';
     color: white;
+}
+.title--yellow{
+    color: yellow;
 }
 
 .smoothie__text {
@@ -250,10 +267,14 @@ body{
     margin-top: 55px;
 }
 
-.text--black {
-    font-family: Muli-Regular;
+.text {
+    font-family: 'Muli-Regular';
     font-size: 18px;
     line-height: 1.94;
+}
+
+.text--black {
+    color: black;
 }
 
 .smoothies__features {
@@ -279,11 +300,11 @@ body{
 .smoothie__icon-img {
     width: 70px;
     height: 70px;
-  
+       
 }
 
-.smothie__sub-title {
-    margin: 30px;
+.smoothie__sub-title {
+    margin: 30px;               
     letter-spacing: -0.5px;
     font-family: 'Muli-ExtraBold';
     color: #f2612d;
@@ -304,13 +325,8 @@ body{
 
 .about__title {
     max-width: 590px;
-    font-size: 55px;
-    line-height: 60px;
-    letter-spacing: -1.1px;
 }
-.about__title--yellow{
- color: yellow;
-}
+
 .about__list {
     font-size: 21px;
     line-height: 22px;
@@ -348,7 +364,12 @@ body{
 }
 
 .products__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .item--chocolate {
     background: url(../assets/images/backgrounds/chocolate-img.png);
     width: 25%;
@@ -368,41 +389,20 @@ body{
 }
 
 .item__img {
-    margin: 129px 0 34px 177px;
 }
 
 .item__title {
-    margin-left: 95px;
+    margin-bottom: 65px;
+    margin: 34px 0;
     font-family: 'Muli-Bold';
     font-size: 24px;
     line-height: 0.92;
     color: #ffffff;
 }
 
-.item__subtitle--chocolate {
-    margin-left: 200px;
-    font-style: italic;
-    font-size: 21px;
-    line-height: 1.52;
-    color: white;
-}
-.item__subtitle--vegan {
-    margin-left: 200px;
-    font-style: italic;
-    font-size: 21px;
-    line-height: 1.52;
-    color: white;
-}
-.item__subtitle--lemon {
-    margin-left: 200px;
-    font-style: italic;
-    font-size: 21px;
-    line-height: 1.52;
-    color: white;
-}
-.item__subtitle--turmeric {
-    margin-left: 200px;
-    font-style: italic;
+.item__subtitle {
+    margin-bottom: 65px;
+    font-family: 'Muli-Italic';
     font-size: 21px;
     line-height: 1.52;
     color: white;
@@ -412,7 +412,6 @@ body{
     width: 204px;
     height: 60px;
     font-size: 21px;
-    margin: 65px 0px 0px 138px;
     padding: 22px 36px 18px;
     border: solid 2px;
     background-color: transparent;
@@ -569,7 +568,6 @@ body{
 }
 .instagram__inner {
     display: flex;
-    width: 20%;
 }
 
 .instagram__title{
@@ -584,9 +582,14 @@ body{
 }
 
 .instagram__pict {
+    width: 20%;
 }
+
+
 .instagram__img {
+    width: 100%;
 }
+
 .instagram_img {
 }
 .footer {
@@ -594,30 +597,24 @@ body{
 }
 .footer__top {
     display: flex;
-    justify-content: space-between;
 }
 
 .footer__logo {
-    padding: 133px 0 182px 103px;
+    margin: 133px 0 182px 103px;
 }
 
 .footer__info {
-    padding: 0 0 0 196px;
+    margin-left: 275px
 }
 
-.info {
-}
 .footer__title {
-}
-
-.title--white {
-    padding: 80px 0 35px 0;
+    margin-top: 80px;
     font-family: 'Muli-ExtraBold';
     font-size: 26px;
     line-height: 1.54;
     letter-spacing: -0.52px;
-    color: #ffffff;
 }
+
 
 .info__list {
     font-family: 'Muli-Bold';
@@ -632,28 +629,47 @@ body{
 }
 
 .footer__payment {
+    margin-left: 160px;
 }
 
-.payment {
-}
 
-.footer__title {
-    padding-bottom: 35px;
+.payment__images{
+    max-width: 230px;
+    gap: 15px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .payment__img {
 }
 
 .footer__subscribe {
+    margin-left: 175px
 }
-.subscribe {
-}
+
 .subscribe__title {
 }
 .subscribe__form {
+    width: 495px;
+    height: 60px;
+    margin-top: 35px;
+    padding: 23px 218px 23px 63px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
 }
+
 .subscribe__input {
+    font-family: 'Muli-Bold';
+    font-size: 17px;
+    line-height: 2.06;
+    letter-spacing: -0.34px;
+    color: #6d450c;
+    border-style: hidden;
 }
+
 .subscribe__exerpt {
 }
 .subscribe__box-link {

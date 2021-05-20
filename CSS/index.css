@@ -213,7 +213,7 @@ body{
 .btn {
     border-radius: 40px;
     font-size: 24px;
-    font-family: 'Muli-ExtraBold';
+    font-family: "Muli-ExtraBold";
     padding: 0 38px;
     display: flex;
     align-items: center;
@@ -230,9 +230,6 @@ body{
 }
 .smoothies {
    padding: 100px 0;
-  /* display: flex;
-   flex-direction: column;
-   align-items: center;*/
 }
 
 .smoothies__title {
@@ -243,7 +240,7 @@ body{
 
 
 .title {
-    font-family: 'Muli-ExtraBold';
+    font-family: "Muli-ExtraBold";
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
@@ -268,7 +265,7 @@ body{
 }
 
 .text {
-    font-family: 'Muli-Regular';
+    font-family: "Muli-Regular";
     font-size: 18px;
     line-height: 1.94;
 }
@@ -306,7 +303,7 @@ body{
 .smoothie__sub-title {
     margin: 30px;               
     letter-spacing: -0.5px;
-    font-family: 'Muli-ExtraBold';
+    font-family: "Muli-ExtraBold";
     color: #f2612d;
 }
 
@@ -320,7 +317,7 @@ body{
 }
 
 .about__box {
-    margin-left: 142px;
+    margin: 97px 0 0 142px;
 }
 
 .about__title {
@@ -328,12 +325,14 @@ body{
 }
 
 .about__list {
+    margin-top: 68px;
     font-size: 21px;
     line-height: 22px;
     color: white;
 }
 .about__list-item {
-    margin: 30px;
+    margin: 0 30px 9px 30px;
+    padding-left: 18px;
     list-style-image: url(../assets/images/about/third-section-icon.png);
 }
 
@@ -341,22 +340,21 @@ body{
 }
 
 .about__text--bold{
-    font-family: 'Muli-ExtraBold';
-}
-
-.about__text--small{
-    font-family:'Muli-Regular';
+    font-family:"Muli-ExtraBold";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.94;
 }
 
 .about__btn {
-    background-color: transparent;
-    border-color: #f8b231;
     margin-top: 50px;
     min-height: 60px;
     min-width: 380px;
 }
 
 .btn-yellow-br {
+    background-color: transparent;
+    border-color: #f8b231;
 }
 
 .products {
@@ -394,7 +392,7 @@ body{
 .item__title {
     margin-bottom: 65px;
     margin: 34px 0;
-    font-family: 'Muli-Bold';
+    font-family: "Muli-Bold";
     font-size: 24px;
     line-height: 0.92;
     color: #ffffff;
@@ -402,7 +400,7 @@ body{
 
 .item__subtitle {
     margin-bottom: 65px;
-    font-family: 'Muli-Italic';
+    font-family: "Muli-Regular";
     font-size: 21px;
     line-height: 1.52;
     color: white;
@@ -434,9 +432,6 @@ body{
 .story__text {
     max-width: 511px;
     padding-top: 43px;
-    font-family: 'Muli-Regular';
-    font-size: 18px;
-    line-height: 1.94;
 }
 
 .story__btn {
@@ -479,19 +474,15 @@ body{
     margin-right: 60px;
 }
 
-.testimonials__quote {
+.testimonials__text {
     display: block;
-    font-family: 'Muli-Regular';
-    font-size: 18px;
-    line-height: 1.94;
     max-width: 455px;
-    color: white;
 }
 
 .testimonials__cite {
     display: block;
     text-align: center;
-    font-family: 'Muli-SemiBoldItalic';
+    font-family: "Muli-SemiBoldItalic";
     font-size: 18px;
     line-height: 2.5;
     color: #f7ae3b;
@@ -535,7 +526,7 @@ body{
 
 .blog__subtitle {
     margin-bottom: 20px;
-    font-family: 'Muli-ExtraBold';
+    font-family: "Muli-ExtraBold";
     font-size: 30px;
     line-height: 1.33;
     letter-spacing: -0.6px;
@@ -545,7 +536,7 @@ body{
 .blog__time {
     display: block;
     margin-bottom: 45px;
-    font-family: 'Muli-Regular';
+    font-family: "Muli-Regular";
     font-size: 16px;
     line-height: 2.19;
     color: #1e1e1e;
@@ -558,7 +549,7 @@ body{
 
 .blog__link {
     font-weight: 800;
-    font-family: 'Muli-Italic';
+    font-family: "Muli-Italic";
 }
 
 .blog__exerpt {  
@@ -574,7 +565,7 @@ body{
     display: flex;
     margin-bottom: 45px;
     justify-content: center;
-    font-family: 'Muli-Bold';
+    font-family: "Muli-Bold";
     font-size: 24px;
     line-height: 1.67;
     letter-spacing: -0.48px;
@@ -608,8 +599,8 @@ body{
 }
 
 .footer__title {
-    margin-top: 80px;
-    font-family: 'Muli-ExtraBold';
+    margin: 80px 0 35px 0;
+    font-family: "Muli-ExtraBold";
     font-size: 26px;
     line-height: 1.54;
     letter-spacing: -0.52px;
@@ -617,7 +608,7 @@ body{
 
 
 .info__list {
-    font-family: 'Muli-Bold';
+    font-family: "Muli-Bold";
     font-size: 18px;
     line-height: 1.94;
     letter-spacing: -0.36px;
@@ -642,6 +633,7 @@ body{
 }
 
 .payment__img {
+    padding-bottom: 10px
 }
 
 .footer__subscribe {
@@ -650,10 +642,11 @@ body{
 
 .subscribe__title {
 }
+
 .subscribe__form {
     width: 495px;
     height: 60px;
-    margin-top: 35px;
+    margin-bottom: 35px;
     padding: 23px 218px 23px 63px;
     border-radius: 30px;
     display: flex;
@@ -662,7 +655,7 @@ body{
 }
 
 .subscribe__input {
-    font-family: 'Muli-Bold';
+    font-family: "Muli-Bold";
     font-size: 17px;
     line-height: 2.06;
     letter-spacing: -0.34px;
@@ -671,11 +664,29 @@ body{
 }
 
 .subscribe__exerpt {
+    margin-left: 185px;
+    font-family: 'Muli-ExtraBold';
+    font-size: 18px;
+    line-height: 1.20;
+    letter-spacing: -0.36px;
+    color: #6d450c;
 }
+
+.subscribe__box{
+    display: inline-block;
+    margin-left: 43px;
+}
+
 .subscribe__box-link {
 }
 .subscribe__img {
+    height: 24px;
 }
+
+.subscribe__img:first-child{
+    margin-right: 25px;
+}
+
 .footer__bottom {
 }
 
@@ -688,14 +699,14 @@ body{
 .footer__box-exerpt {
     margin: 26px 0 21px 0;
     margin: 26px 0 21px 0;
-    font-family: 'Muli-Regular';
+    font-family: "Muli-Regular";
     font-size: 13px;
     line-height: 2.69;
     letter-spacing: 0.26px;
     color: #af8a82;
 }
 .uplink {
-    font-family: 'Muli-Bold';
+    font-family: "Muli-Bold";
     font-size: 16px;
     line-height: 2.5;
     letter-spacing: -0.32px;

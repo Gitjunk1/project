@@ -75,6 +75,7 @@ body{
 }
 
 .header__top {
+    position: relative;
     padding: 70px 0 0 0;
     margin: 0 0 100px 0;
     display: flex;
@@ -88,7 +89,6 @@ body{
 
 .nav__list {
     display: flex;
-    font-weight: bold;
     color: white;
     font-family: Muli-Bold;
     font-size: 16px;
@@ -105,17 +105,21 @@ body{
 }
 
 .nav__list-item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 .nav__list-link {
-      font-weight: 100;
     color: white;
     text-decoration: none;
 }
 
 .header__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .logo {
 }
 .logo__link {
@@ -201,23 +205,13 @@ body{
     justify-content: center;
 }
 
-.header__btn {
-    height: 70px;
-    width: 280px;
-    align-self: center;
-    margin: 0 55px 0 0;
-    line-height: 1.67;
-    letter-spacing: -0.48px;
-}
-
 .btn {
     border-radius: 40px;
-    font-size: 24px;
+    font-size: 21px;
     font-family: "Muli-ExtraBold";
     padding: 0 38px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: left;
+    line-height: 1.05;
     color: white;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -225,9 +219,20 @@ body{
     -o-border-radius: 40px;
 }
 
+.header__btn {
+    font-size: 24px;
+    height: 70px;
+    width: 280px;
+    align-self: center;
+    line-height: 1.67;
+    letter-spacing: -0.48px;
+}
+
+
 .btn--green {
     background-color: #0aa566;
 }
+
 .smoothies {
    padding: 100px 0;
 }
@@ -309,11 +314,15 @@ body{
 
 .about {
     background: url(../assets/images/backgrounds/third-section-img.png) no-repeat center/cover;
+}
+
+.about__wrapper{
     display: flex;
     justify-content: center;
 }
 
 .about__img {
+    margin-top: 64px;
 }
 
 .about__box {
@@ -322,16 +331,16 @@ body{
 
 .about__title {
     max-width: 590px;
+    line-height: 1.20;
 }
 
 .about__list {
     margin-top: 68px;
     font-size: 21px;
-    line-height: 22px;
     color: white;
 }
 .about__list-item {
-    margin: 0 30px 9px 30px;
+    margin: 0 0px 10px 30px;
     padding-left: 18px;
     list-style-image: url(../assets/images/about/third-section-icon.png);
 }
@@ -343,13 +352,15 @@ body{
     font-family:"Muli-ExtraBold";
     font-size: 21px;
     font-weight: bold;
-    line-height: 1.94;
+    line-height: 1.05;
 }
 
 .about__btn {
     margin-top: 50px;
     min-height: 60px;
-    min-width: 380px;
+    width: 100%;
+    max-width: 380px;
+    text-indent: -15px;
 }
 
 .btn-yellow-br {
@@ -409,8 +420,6 @@ body{
 .products__btn {
     width: 204px;
     height: 60px;
-    font-size: 21px;
-    padding: 22px 36px 18px;
     border: solid 2px;
     background-color: transparent;
 }

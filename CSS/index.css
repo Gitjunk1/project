@@ -115,7 +115,7 @@ body{
 
 .header__logo {
     position: absolute;
-    top: 50%;
+    top: 70px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -245,7 +245,17 @@ body{
 
 .btn--green {
     background-color: #0aa566;
+    position: relative;
 }
+
+.btn--green::after {
+    content: url(../assets/images/testemonials/right-arrow.png);
+    position: absolute;
+    top: 15px;
+    right: 40px;
+}
+    
+
 
 .smoothies {
    padding: 100px 0;
@@ -384,6 +394,13 @@ body{
     width: 100%;
     max-width: 380px;
     text-indent: -15px;
+    position: relative;
+}
+
+.about__btn::after {
+    content: url(../assets/images/testemonials/right-arrow.png);
+    position: absolute;
+    right: 30px;
 }
 
 .btn-yellow-br {
@@ -444,7 +461,16 @@ body{
     height: 60px;
     border: solid 2px;
     background-color: transparent;
+    position: relative;
 }
+
+.products__btn::after {
+    content: url(../assets/images/products/white-arrow.png);
+    position: absolute;
+    top: 20px;
+    right: 35px;
+}
+
 
 .story {
     padding: 120px 0;
@@ -465,7 +491,9 @@ body{
     position: absolute;
     top: 20px;
     right: -322px;
+    z-index: 1;
 }
+
 
 .story__title {
     padding-top: 140px; 
@@ -483,9 +511,11 @@ body{
     margin-top: 60px;
 }
 
+
 .story__img {
     margin-left: 205px;
 }
+
 
 .testimonials {
     padding: 100px 0;
@@ -506,6 +536,14 @@ body{
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
+    position: relative;
+}
+
+.testimonials__title::after {
+    content: url(../assets/images/testemonials/dots.png);
+    position: absolute;
+    top: -170px;
+    right: -40px;
 }
 
 .testimonials__title--big {
@@ -553,10 +591,13 @@ body{
     position: relative;
 }
 
-.testimonials__btn::after{
+.testimonials__btn--left::after {
     content: url(../assets/images/testemonials/left-arrow.png);
+    position: absolute;
+}
+
+.testimonials__btn--right::after {
     content: url(../assets/images/testemonials/right-arrow.png);
-    display: block;
     position: absolute;
 }
 
@@ -571,6 +612,13 @@ body{
 
 .blog__box {
     margin-right: 60px;
+    position: relative;
+}
+
+.blog__box::after {
+    content: url(../assets/images/blog/orange-Line.png);
+    position: absolute;
+    top: 140px;
 }
 
 .blog__title {
@@ -581,7 +629,7 @@ body{
 }
 
 .blog__discription{
-    padding-top: 170px;
+    padding-top: 180px;
 }
 
 .blog__subtitle {
@@ -610,16 +658,22 @@ body{
 .blog__link {
     font-weight: 800;
     font-family: "Muli-Italic";
+    position: relative;
+}
+
+.blog__link::after {
+    content: url(../assets/images/blog/blog-section-arrow.png);
+    position: absolute;
+    right: -25px;
 }
 
 .blog__exerpt {  
 }
 
+
 .instagram {
 }
-.instagram__inner {
-    display: flex;
-}
+
 
 .instagram__title{
   text-align: center;
@@ -629,6 +683,19 @@ body{
     line-height: 1.67;
     letter-spacing: -0.48px;
     color: #0aa566;
+    position: relative;
+}
+
+.instagram__title::after {
+    content: url(../assets/images/instagram/green-Icon-inst.png);
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 825px;
+}
+
+.instagram__inner {
+    display: flex;
 }
 
 .instagram__pict {
@@ -722,6 +789,13 @@ body{
     letter-spacing: -0.34px;
     color: #6d450c;
     border-style: hidden;
+    position: relative;
+}
+
+.subscribe__input::before {
+    content: url(../assets/images/footer/the-envelope.png);
+    display: block;
+    position: absolute;
 }
 
 .subscribe__exerpt {
@@ -731,6 +805,15 @@ body{
     line-height: 1.20;
     letter-spacing: -0.36px;
     color: #6d450c;
+    position: relative;
+}
+
+.subscribe__exerpt::before {
+    content: url(../assets/images/footer/footer-arrow.png);
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 120px
 }
 
 .subscribe__box{
@@ -773,4 +856,12 @@ body{
     letter-spacing: -0.32px;
     color: #ffffff;
     background-color: transparent;
+    position: relative;
+}
+
+.uplink::after {
+    content: url(../assets/images/footer/go-top-arrow.png);
+    content: url(../assets/images/footer/footer-square.png);
+    display: block;
+    position: absolute;
 }

@@ -63,7 +63,7 @@ body{
     background: url(../assets/images/backgrounds/main-img.png) no-repeat;
     background-position: center;
     background-size: cover;
-
+ 
 }
 
 .container{
@@ -71,13 +71,28 @@ body{
     margin: 0 auto;
 }
 
-.header__wrapper{
-}
 
 .header__top {
     position: relative;
     padding: 70px 0 0 0;
     margin: 0 0 100px 0;
+}
+
+.header__burger-btn {
+    width: 50px;
+    position: fixed;
+    top: 50px;
+    left: 650px;
+    display: none; 
+    z-index: 99999;
+}
+
+.header__burger-btn--img{
+    width: 100%;
+}
+
+
+.header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,6 +109,14 @@ body{
     font-size: 16px;
     letter-spacing: 0.32px;
     text-transform: uppercase;
+}
+
+.nav__list:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 .nav__list-item:last-child {
@@ -200,8 +223,7 @@ body{
     display: flex;
 }
 
-.social__list-img { 
-}
+
 .header__content {
     display:flex;
     justify-content: center;
@@ -228,23 +250,27 @@ body{
     align-self: center;
     line-height: 1.67;
     letter-spacing: -0.48px;
-}
-
-
-.btn--green {
-    background-color: #0aa566;
-    border: transparent;
     position: relative;
 }
 
-.btn--green::after {
-    content: " ";
+.header__btn::after {
+    content: "";
     width: 30px;
     height: 16px;
     background: url(../assets/images/testemonials/right-arrow.png);
     position: absolute;
     top: 30px;
     right: 40px;
+}
+
+
+.btn--green {
+    background-color: #0aa566;
+    border: transparent;
+}
+
+.btn--green:hover::after{
+    transform: translateX(10px);
 }
 
 
@@ -359,7 +385,6 @@ body{
     display: block;
     position: absolute;
     right: 120px;
- 
 }
 
 .about__list {
@@ -373,8 +398,6 @@ body{
     list-style-image: url(../assets/images/about/third-section-icon.png);
 }
 
-.about__text {
-}
 
 .about__text--bold{
     font-family:"Muli-ExtraBold";
@@ -437,8 +460,6 @@ body{
      width: 25%;
 }
 
-.item__img {
-}
 
 .item__title {
     margin: 34px 0 15px 0;
@@ -499,10 +520,6 @@ body{
     transform: translate(-50%, -122%);
 }
 
-.story__wrapper{
-}
-
-
 
 .story__title {
     padding-top: 140px; 
@@ -519,7 +536,20 @@ body{
     min-width: 301px;
     min-height: 60px;
     margin-top: 60px;
+    position: relative;
 }
+
+
+.story__btn::after {
+    content: "";
+    width: 30px;
+    height: 16px;
+    background: url(../assets/images/testemonials/right-arrow.png);
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
 
 
 .story__img {
@@ -715,13 +745,6 @@ body{
    
 }
 
-.blog__exerpt {  
-}
-
-
-.instagram {
-}
-
 
 .instagram__title{
     max-width: 182px;
@@ -808,8 +831,6 @@ body{
 }
 
 
-.info__list-item {
-}
 
 .footer__payment {
     margin-left: 160px;
@@ -832,8 +853,6 @@ body{
     margin-left: 175px
 }
 
-.subscribe__title {
-}
 
 .subscribe__form {
     width: 100%;
@@ -914,7 +933,18 @@ body{
     display: flex;
     justify-content: center;
     background: url(../assets/images/backgrounds/footer2-img.png);
+    position: relative;
 }
+
+.footer__wrapper::after {
+    content: "Go top";
+    font-family: "Muli-Bold";
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    right: 170px;
+} 
 
 .footer__box-exerpt {
     margin: 26px 0 21px 0;
@@ -923,7 +953,6 @@ body{
     line-height: 2.69;
     letter-spacing: 0.26px;
     color: #af8a82;
-    position: relative;
 }
 
 
@@ -933,7 +962,7 @@ body{
     border-radius: 5px;
     border: none;
     background-color: #f2662f;
-    position: fixed;
+    position: relative;
     bottom: 50px;
     right: 100px;
 }
@@ -953,15 +982,35 @@ body{
     -o-transform: translate(-50%,-50%);
 }
 
-.uplink::before {
-    content: "Go top";
-    font-family: "Muli-Bold";
-    font-size: 16px;
-    line-height: 1.20;
-    color: #ffffff;
-    position: absolute;
-    display: block;
-   
-}    
+@media screen and (max-width: 768px) { 
+    .header__navigation {
+        /* display: none;  */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: teal;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-top: 150px;
+    }  
+    .header__burger-btn {
+        display: block;
+    }
+    .header__inner {
+        margin-bottom: 100px;
+    }
+    .nav__list {
+        flex-direction: column;
+    }
+    .nav__list-item {
+        margin: 0 0 30px;
+    }
+}
 
+.open {
+    display: flex;
+}
 

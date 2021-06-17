@@ -60,25 +60,36 @@ body{
     color: #fff;
 }
 
-
-@import './blocks/about';
-@import './blocks/blog';
-@import './blocks/instagram';
-@import './blocks/products';
-@import './blocks/testimonials';
-@import './blocks/smoothie';
-@import './blocks/story';
-@import './components/button';
-@import './components/item';
-@import './components/payment';
+@import './layout/header';
+@import './layout/container';
+@import './layout/navigation';
 @import './components/personal';
 @import './components/social';
-@import './components/subscribe';
+@import './components/button';
+@import './blocks/smoothie';
 @import './components/title';
-@import './components/uplink';
 @import './components/text';
-@import './layout/container';
+@import './blocks/about';
+@import './blocks/products';
+@import './components/item';
+@import './blocks/story';
+@import './blocks/testimonials';
+@import './blocks/blog';
+@import './blocks/instagram';
 @import './layout/footer';
-@import './layout/header';
 @import './layout/info';
-@import './layout/navigation';
+@import './components/payment';
+@import './components/subscribe';
+@import './components/uplink';
+
+
+
+
+
+
+
+
+
+
+
+

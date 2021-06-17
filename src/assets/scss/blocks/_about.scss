@@ -1,5 +1,5 @@
 .about {
-    background: url(../assets/images/backgrounds/third-section-img.png) no-repeat center/cover;
+    background: url('./../images/backgrounds/third-section-img.png') no-repeat center/cover;
 }
 
 .about__wrapper{
@@ -26,7 +26,7 @@
     content: "";
     width: 405px;
     height: 13px;
-    background: url(../assets/images/about/yellow-line.png);
+    background: url('./../images/about/yellow-line.png');
     display: block;
     position: absolute;
     right: 120px;
@@ -40,7 +40,7 @@
 .about__list-item {
     margin: 0 0px 10px 30px;
     padding-left: 18px;
-    list-style-image: url(../assets/images/about/third-section-icon.png);
+    list-style-image: url('./../images/about/third-section-icon.png');
 }
 
 
@@ -64,7 +64,7 @@
     content: "";
     width: 30px;
     height: 16px;
-    background: url(../assets/images/testemonials/right-arrow.png);
+    background: url('./../images/testemonials/right-arrow.png');
     position: absolute;
     top: 23px;
     right: 50px;

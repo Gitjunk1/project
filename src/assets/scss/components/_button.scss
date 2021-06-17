@@ -10,18 +10,19 @@
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+    &--green {
+        background-color: #0aa566;
+        border: transparent;
+    }
+    &--green:hover::after{
+        transform: translateX(10px);
+    }
+    
+    &-yellow-br {
+        background-color: transparent;
+        border-color: #f8b231;
+    }
 }
 
-.btn--green {
-    background-color: #0aa566;
-    border: transparent;
-}
 
-.btn--green:hover::after{
-    transform: translateX(10px);
-}
 
-.btn-yellow-br {
-    background-color: transparent;
-    border-color: #f8b231;
-}

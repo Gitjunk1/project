@@ -1,5 +1,5 @@
 .footer {
-    background: url(../assets/images/backgrounds/footer-img.png);
+    background: url('./../images/backgrounds/footer-img.png');
 }
 .footer__top {
     display: flex;
@@ -32,7 +32,7 @@
 .footer__wrapper{
     display: flex;
     justify-content: center;
-    background: url(../assets/images/backgrounds/footer2-img.png);
+    background: url('./../images/backgrounds/footer2-img.png');
     position: relative;
 }
 

@@ -13,7 +13,7 @@
     content: "";
     width: 24px;
     height: 19px;
-    background: url(../assets/images/footer/the-envelope.png);
+    background: url('./../images/footer/the-envelope.png');
     position: absolute;
     top: 22px;
     left: 17px;
@@ -51,7 +51,7 @@
 
 .subscribe__exerpt::before {
     content: "";
-    background:  url(../assets/images/footer/footer-arrow.png);
+    background:  url('./../images/footer/footer-arrow.png');
     width: 48px;
     height: 43px;
     display: block;

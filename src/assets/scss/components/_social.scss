@@ -1,0 +1,20 @@
+.social__list {
+    display: flex;
+}
+.social__list-item {
+    display: inline-block;
+    margin-left: 30px;
+}
+.social__list-item:first-child {
+    margin-left: 0px;
+
+}
+.social__list-link {
+    height: 35px;
+    width: 35px;
+    background-color: white; 
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}

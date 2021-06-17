@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 40px;
+    font-size: 21px;
+    font-family: "Muli-ExtraBold";
+    padding: 0 38px;
+    text-align: left;
+    line-height: 1.05;
+    color: white;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.btn--green {
+    background-color: #0aa566;
+    border: transparent;
+}
+
+.btn--green:hover::after{
+    transform: translateX(10px);
+}
+
+.btn-yellow-br {
+    background-color: transparent;
+    border-color: #f8b231;
+}

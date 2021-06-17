@@ -1,0 +1,36 @@
+.personal__list {
+    margin-right: 135px;
+    display: flex;
+}
+
+.personal__list-item {
+    display: inline-block;
+   margin-left: 45px;
+}
+.personal__list-item:first-child {
+   margin-left: 0px;
+}
+
+.personal__list-link {
+    position: relative;
+}
+
+.personal__item--cart{
+    width: 18px;
+    height: 18px;
+    font-family: 'Muli-Regular';
+    font-size: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      color: #000000;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    right: 120px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("../assets/fonts/Muli-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Muli-Regular";
+    src: url("../assets/fonts/Muli-Regular.woff");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Muli-ExtraBold";
+    src: url("../assets/fonts/Muli-ExtraBold.woff");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Muli-BoldItalic";
+    src: url("../assets/fonts/Muli-BoldItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Muli-Italic";
+    src: url("../assets/fonts/Muli-Italic.ttf");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: "Muli-Semi-BoldItalic";
+    src: url("../assets/fonts/Muli-Semi-BoldItalic.ttf");
+    font-style: normal;
+    font-weight: normal;
+    display: swap;
+}
+
+@import './base/normalize';
+
+ul {
+    list-style: none;
+    margin: 0;  
+}
+a {
+    display: inline-block;
+}
+a:hover {
+     text-decoration: none;
+     color: inherit;
+}
+body{
+    font-family: "Muli" sans-serif;  
+    color: #fff;
+}
+
+
+@import './blocks/about';
+@import './blocks/blog';
+@import './blocks/instagram';
+@import './blocks/products';
+@import './blocks/testimonials';
+@import './blocks/smoothie';
+@import './blocks/story';
+@import './components/button';
+@import './components/item';
+@import './components/payment';
+@import './components/personal';
+@import './components/social';
+@import './components/subscribe';
+@import './components/title';
+@import './components/uplink';
+@import './components/text';
+@import './layout/container';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/info';
+@import './layout/navigation';

@@ -1,0 +1,33 @@
+.item--chocolate {
+    background: url(../assets/images/backgrounds/chocolate-img.png);
+    width: 25%;
+}
+.item--vegan {
+    background: url(../assets/images/backgrounds/vegan-img.png);
+     width: 25%;
+}
+.item--lemon {
+    background: url(../assets/images/backgrounds/lemon-img.png);
+     width: 25%;
+}
+.item--turmeric {
+    background: url(../assets/images/backgrounds/turmeric-img.png);
+     width: 25%;
+}
+
+
+.item__title {
+    margin: 34px 0 15px 0;
+    font-family: "Muli-Bold";
+    font-size: 24px;
+    line-height: 0.92;
+    color: #ffffff;
+}
+
+.item__subtitle {
+    margin-bottom: 65px;
+    font-family: "Muli-Regular";
+    font-size: 21px;
+    line-height: 1.52;
+    color: white;
+}

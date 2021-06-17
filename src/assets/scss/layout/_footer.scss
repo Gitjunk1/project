@@ -1,0 +1,56 @@
+.footer {
+    background: url(../assets/images/backgrounds/footer-img.png);
+}
+.footer__top {
+    display: flex;
+}
+
+.footer__logo {
+    margin: 133px 0 182px 103px;
+}
+
+.footer__info {
+    margin-left: 275px
+}
+
+.footer__title {
+    margin: 80px 0 35px 0;
+    font-family: "Muli-ExtraBold";
+    font-size: 26px;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+}
+
+.footer__payment {
+    margin-left: 160px;
+}
+
+.footer__subscribe {
+    margin-left: 175px
+}
+
+.footer__wrapper{
+    display: flex;
+    justify-content: center;
+    background: url(../assets/images/backgrounds/footer2-img.png);
+    position: relative;
+}
+
+.footer__wrapper::after {
+    content: "Go top";
+    font-family: "Muli-Bold";
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 30px;
+    right: 170px;
+} 
+
+.footer__box-exerpt {
+    margin: 26px 0 21px 0;
+    font-family: "Muli-Regular";
+    font-size: 13px;
+    line-height: 2.69;
+    letter-spacing: 0.26px;
+    color: #af8a82;
+}

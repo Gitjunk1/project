@@ -3,15 +3,16 @@
     font-size: 50px;
     line-height: 0.8;
     letter-spacing: -1px;
+
+    &--orange {
+        color: #f7ae3b;
+    }
+    
+    &--white {
+        color: white;
+    }
+    &--yellow{
+        color: yellow;
+    }
 }
 
-.title--orange {
-    color: #f7ae3b;
-}
-
-.title--white {
-    color: white;
-}
-.title--yellow{
-    color: yellow;
-}

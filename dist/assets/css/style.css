@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Muli-Bold";
-    src: url("../assets/fonts/Muli-Bold.ttf");
+    src: url("../fonts/Muli-Bold.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: "Muli-Regular";
-  src: url("../assets/fonts/Muli-Regular.woff");
+  src: url("../fonts/Muli-Regular.woff");
   font-style: normal;
   font-weight: normal;
   display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: "Muli-ExtraBold";
-  src: url("../assets/fonts/Muli-ExtraBold.woff");
+  src: url("../fonts/Muli-ExtraBold.woff");
   font-style: normal;
   font-weight: normal;
   display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "Muli-BoldItalic";
-  src: url("../assets/fonts/Muli-BoldItalic.ttf");
+  src: url("../fonts/Muli-BoldItalic.ttf");
   font-style: normal;
   font-weight: normal;
   display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
     font-family: "Muli-Italic";
-  src: url("../assets/fonts/Muli-Italic.ttf");
+  src: url("../fonts/Muli-Italic.ttf");
   font-style: normal;
   font-weight: normal;
   display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: "Muli-Semi-BoldItalic";
-  src: url("../assets/fonts/Muli-Semi-BoldItalic.ttf");
+  src: url("../fonts/Muli-Semi-BoldItalic.ttf");
   font-style: normal;
   font-weight: normal;
   display: swap;
@@ -457,6 +457,8 @@ body {
 
 .header__nav {
     text-decoration: none;
+    -webkit-transform: translate(90px, 17px);
+    transform: translate(90px, 17px);
 }
 
 .header__logo {
@@ -510,7 +512,7 @@ body {
     content: "";
     width: 30px;
     height: 16px;
-    background: url(../assets/images/testemonials/right-arrow.png);
+    background: url("./../images/testemonials/right-arrow.png");
     position: absolute;
     top: 30px;
     right: 40px;
@@ -557,7 +559,7 @@ body {
     text-transform: uppercase;
 }
 
-.nav__list:hover {
+.nav_list:hover {
     transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -670,10 +672,11 @@ body {
     text-align: left;
     line-height: 1.05;
     color: white;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+}
+
+.btn:hover::after {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
 }
 
 .btn--green {
@@ -681,21 +684,16 @@ body {
     border: transparent;
 }
 
-.btn--green:hover::after {
-    -webkit-transform: translateX(10px);
-    transform: translateX(10px);
-}
-
 .btn-yellow-br {
     background-color: transparent;
     border-color: #f8b231;
 }
 
-.smoothies {
+.smoothie {
     padding: 100px 0;
 }
 
-.smoothies__title {
+.smoothie__title {
     font-weight: 800;
     text-align: center;
     margin: -5px 0 0 10px;
@@ -708,7 +706,7 @@ body {
     margin-top: 47px;
 }
 
-.smoothies__features {
+.smoothie__features {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1060,7 +1058,7 @@ body {
     z-index: 1;
 }
 
-.testemonials__control {
+.testimonials__control {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1071,6 +1069,14 @@ body {
     background-color: transparent;
     border: none;
     position: relative;
+}
+
+.testimonials__btn:nth-child(2)::after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .testimonials__btn::after {
@@ -1085,14 +1091,6 @@ body {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-}
-
-.testimonials__btn:nth-child(2)::after {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
 }
 
 .blog {
@@ -1301,7 +1299,7 @@ body {
     flex-wrap: wrap;
 }
 
-.payment__img {
+.payment__images__img {
     padding-bottom: 10px;
 }
 

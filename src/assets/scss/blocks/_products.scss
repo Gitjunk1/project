@@ -1,29 +1,31 @@
 .products {
     display: flex;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 129px 0 79px;
+    }
+    
+    &__btn {
+        width: 204px;
+        height: 60px;
+        border: solid 2px;
+        background-color: transparent;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 30px;
+            height: 16px;
+            background: url('./../images/products/white-arrow.png');
+            position: absolute;
+            top: 22px;
+            right: 35px;
+        }
+    }
+
 }
 
-.products__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 129px 0 79px;
-}
-
-.products__btn {
-    width: 204px;
-    height: 60px;
-    border: solid 2px;
-    background-color: transparent;
-    position: relative;
-}
-
-.products__btn::after {
-    content: "";
-    width: 30px;
-    height: 16px;
-    background: url('./../images/products/white-arrow.png');
-    position: absolute;
-    top: 22px;
-    right: 35px;
-}

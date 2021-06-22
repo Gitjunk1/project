@@ -1,75 +1,80 @@
 .about {
     background: url('./../images/backgrounds/third-section-img.png') no-repeat center/cover;
-}
 
-.about__wrapper{
-    display: flex;
-    justify-content: center;
-}
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__img {
+        transform: translateY(64px);
+    }
+    
+    &__box {
+        margin: 97px 0 0 142px;
+    }
+    
+    
+    &__title {
+        max-width: 590px;
+        line-height: 1.20;
+        position: relative;
 
-.about__img {
-    transform: translateY(64px);
-}
+        &::after {
+            content: "";
+            width: 405px;
+            height: 13px;
+            background: url('./../images/about/yellow-line.png');
+            display: block;
+            position: absolute;
+            right: 120px;
+        }
+    }
+    
+    
+    &__list {
+        margin-top: 68px;
+        font-size: 21px;
+        color: white;
+    }
+    &__list-item {
+        margin: 0 0px 10px 30px;
+        padding-left: 18px;
+        list-style-image: url('./../images/about/third-section-icon.png');
+    }
+    
+    
+    &__text--bold{
+        font-family:"Muli-ExtraBold";
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 1.05;
+    }
+    
+    &__btn {
+        margin-top: 50px;
+        min-height: 60px;
+        width: 100%;
+        max-width: 380px;
+        text-indent: -15px;
+        position: relative;
 
-.about__box {
-    margin: 97px 0 0 142px;
-}
-
-
-.about__title {
-    max-width: 590px;
-    line-height: 1.20;
-    position: relative;
-}
-
-.about__title::after {
-    content: "";
-    width: 405px;
-    height: 13px;
-    background: url('./../images/about/yellow-line.png');
-    display: block;
-    position: absolute;
-    right: 120px;
-}
-
-.about__list {
-    margin-top: 68px;
-    font-size: 21px;
-    color: white;
-}
-.about__list-item {
-    margin: 0 0px 10px 30px;
-    padding-left: 18px;
-    list-style-image: url('./../images/about/third-section-icon.png');
-}
-
-
-.about__text--bold{
-    font-family:"Muli-ExtraBold";
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 1.05;
-}
-
-.about__btn {
-    margin-top: 50px;
-    min-height: 60px;
-    width: 100%;
-    max-width: 380px;
-    text-indent: -15px;
-    position: relative;
-}
-
-.about__btn::after {
-    content: "";
-    width: 30px;
-    height: 16px;
-    background: url('./../images/testemonials/right-arrow.png');
-    position: absolute;
-    top: 23px;
-    right: 50px;
+        &::after {
+            content: "";
+            width: 30px;
+            height: 16px;
+            background: url('./../images/testemonials/right-arrow.png');
+            position: absolute;
+            top: 23px;
+            right: 50px;
+          
+        }
+    }
+    
   
 }
+
+
 
 @media screen and (max-width: 768px) { 
   

@@ -2,8 +2,9 @@
     font-family: "Muli-Regular";
     font-size: 18px;
     line-height: 1.94;
+
+    &--black {
+        color: black;
+    }
 }
 
-.text--black {
-    color: black;
-}

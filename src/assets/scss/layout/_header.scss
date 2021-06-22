@@ -3,91 +3,93 @@
     background: url('./../images/backgrounds/main-img.png') no-repeat;
     background-position: center;
     background-size: cover;
- 
+
+    &__top {
+        position: relative;
+        padding: 85px 95px 127px;
+    }
+    
+    &__burger-btn {
+        width: 50px;
+        position: fixed;
+        top: 50px;
+        left: 650px;
+        display: none; 
+        z-index: 99999;
+    }
+    
+    &__burger-btn--img{
+        width: 100%;
+    }
+    
+    
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__nav{
+        text-decoration: none;
+    }
+    
+    &__logo {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    
+    &__inner{
+        display: flex;
+        align-items: center;
+    }
+    
+    &__personal{
+        position: relative;
+        
+        &::after {
+            content: "";
+            height: 2px;
+            width: 48px;
+            background-color: white;
+            opacity: 0.3;
+            display: block;
+             position: absolute;
+             top: 50%;
+             right: 38px;
+         }
+    }
+    
+    &__content {
+        display:flex;
+        justify-content: center;
+    }
+    
+    &__btn {
+        font-size: 24px;
+        height: 70px;
+        width: 280px;
+        align-self: center;
+        line-height: 1.67;
+        letter-spacing: -0.48px;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 30px;
+            height: 16px;
+            background: url('./../images/testemonials/right-arrow.png');
+            position: absolute;
+            top: 30px;
+            right: 40px;
+        }
+    }
+    
 }
 
-.header__top {
-    position: relative;
-    padding: 70px 0 0 0;
-    margin: 0 0 100px 0;
-}
 
-.header__burger-btn {
-    width: 50px;
-    position: fixed;
-    top: 50px;
-    left: 650px;
-    display: none; 
-    z-index: 99999;
-}
-
-.header__burger-btn--img{
-    width: 100%;
-}
-
-
-.header__navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__nav{
-    text-decoration: none;
-}
-
-.header__logo {
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-
-.header__inner{
-    display: flex;
-}
-
-.header__personal{
-    position: relative;
-}
-
-.header__personal::after {
-   content: "";
-   height: 2px;
-   width: 48px;
-   background-color: white;
-   opacity: 0.3;
-   display: block;
-    position: absolute;
-    top: 33px;
-    right: -10px;
-}
-
-.header__content {
-    display:flex;
-    justify-content: center;
-}
-
-.header__btn {
-    font-size: 24px;
-    height: 70px;
-    width: 280px;
-    align-self: center;
-    line-height: 1.67;
-    letter-spacing: -0.48px;
-    position: relative;
-}
-
-.header__btn::after {
-    content: "";
-    width: 30px;
-    height: 16px;
-    background: url(../assets/images/testemonials/right-arrow.png);
-    position: absolute;
-    top: 30px;
-    right: 40px;
-}
 
 @media screen and (max-width: 768px) { 
 .header__navigation {
@@ -112,3 +114,4 @@
 }
 
 }
+

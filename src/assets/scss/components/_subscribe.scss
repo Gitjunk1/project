@@ -1,74 +1,79 @@
-.subscribe__form {
-    width: 100%;
-    max-width: 495px;
-    height: 60px;
-    margin-bottom: 35px;
-    border-radius: 30px;
-    background-color: #ffffff;
-    position: relative;
+.subscribe {
 
+    &__form {
+        width: 100%;
+        max-width: 495px;
+        height: 60px;
+        margin-bottom: 35px;
+        border-radius: 30px;
+        background-color: #ffffff;
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 24px;
+            height: 19px;
+            background: url('./../images/footer/the-envelope.png');
+            position: absolute;
+            top: 22px;
+            left: 17px;
+        }
+    }
+    
+    &__input {
+        width: 100%;
+        height: 100%;
+        font-family: "Muli-Bold";
+        font-size: 17px;
+        line-height: 2.06;
+        border-radius: 30px;
+        text-indent: 50px;
+        letter-spacing: -0.34px;
+        color: #6d450c;
+        border-style: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+        }
+    }
+    
+    &__exerpt {
+        margin-left: 185px;
+        font-family: 'Muli-ExtraBold';
+        font-size: 18px;
+        line-height: 1.20;
+        letter-spacing: -0.36px;
+        color: #6d450c;
+        position: relative;
+
+        &::before {
+            content: "";
+            background:  url('./../images/footer/footer-arrow.png');
+            width: 48px;
+            height: 43px;
+            display: block;
+            position: absolute;
+                top: -20px;
+            right: 120px;
+        }
+    }
+     
+    &__box{
+        display: inline-block;
+        margin-left: 43px;
+    }
+    
+    &__img {
+        height: 24px;
+
+        &:first-child{
+            margin-right: 25px;
+        }
+    }
+    
+    
 }
 
-.subscribe__form::after {
-    content: "";
-    width: 24px;
-    height: 19px;
-    background: url('./../images/footer/the-envelope.png');
-    position: absolute;
-    top: 22px;
-    left: 17px;
-}
-
-.subscribe__input {
-    width: 100%;
-    height: 100%;
-    font-family: "Muli-Bold";
-    font-size: 17px;
-    line-height: 2.06;
-    border-radius: 30px;
-    text-indent: 50px;
-    letter-spacing: -0.34px;
-    color: #6d450c;
-    border-style: hidden;
-    position: relative;
-}
-
-.subscribe__input::before {
-    content: "";
-    display: block;
-    position: absolute;
-}
-
-.subscribe__exerpt {
-    margin-left: 185px;
-    font-family: 'Muli-ExtraBold';
-    font-size: 18px;
-    line-height: 1.20;
-    letter-spacing: -0.36px;
-    color: #6d450c;
-    position: relative;
-}
-
-.subscribe__exerpt::before {
-    content: "";
-    background:  url('./../images/footer/footer-arrow.png');
-    width: 48px;
-    height: 43px;
-    display: block;
-    position: absolute;
-        top: -20px;
-    right: 120px;
-}
-
-.subscribe__box{
-    display: inline-block;
-    margin-left: 43px;
-}
-
-.subscribe__img {
-    height: 24px;
-}
-
-.subscribe__img:first-child{
-    margin-right: 25px;
-}

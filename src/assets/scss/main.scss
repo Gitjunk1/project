@@ -1,42 +1,44 @@
+@import './abstracts/vars';
+
 
 @font-face {
     font-family: "Muli-Bold";
-    src: url("../assets/fonts/Muli-Bold.ttf");
+    src: url("../fonts/Muli-Bold.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
 @font-face {
     font-family: "Muli-Regular";
-    src: url("../assets/fonts/Muli-Regular.woff");
+    src: url("../fonts/Muli-Regular.woff");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
 @font-face {
     font-family: "Muli-ExtraBold";
-    src: url("../assets/fonts/Muli-ExtraBold.woff");
+    src: url("../fonts/Muli-ExtraBold.woff");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
 @font-face {
     font-family: "Muli-BoldItalic";
-    src: url("../assets/fonts/Muli-BoldItalic.ttf");
+    src: url("../fonts/Muli-BoldItalic.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
 @font-face {
     font-family: "Muli-Italic";
-    src: url("../assets/fonts/Muli-Italic.ttf");
+    src: url("../fonts/Muli-Italic.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;
 }
 @font-face {
     font-family: "Muli-Semi-BoldItalic";
-    src: url("../assets/fonts/Muli-Semi-BoldItalic.ttf");
+    src: url("../fonts/Muli-Semi-BoldItalic.ttf");
     font-style: normal;
     font-weight: normal;
     display: swap;

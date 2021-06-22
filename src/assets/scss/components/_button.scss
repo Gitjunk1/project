@@ -1,22 +1,22 @@
 .btn {
-    border-radius: 40px;
+    border-radius: $btnBorderRadius;
     font-size: 21px;
     font-family: "Muli-ExtraBold";
     padding: 0 38px;
     text-align: left;
     line-height: 1.05;
     color: white;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    -ms-border-radius: 40px;
-    -o-border-radius: 40px;
+    &:hover {
+        &::after{
+            transform: translateX(10px);
+            }
+    }
     &--green {
-        background-color: #0aa566;
+        background-color: $buttonColor;
         border: transparent;
+       
     }
-    &--green:hover::after{
-        transform: translateX(10px);
-    }
+  
     
     &-yellow-br {
         background-color: transparent;

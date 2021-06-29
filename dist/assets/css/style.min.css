@@ -450,7 +450,8 @@ body {
     padding-top: 150px; }
   .header__burger-btn {
     display: block;
-    border: none; }
+    border: none;
+    z-index: 99999; }
   .header__inner {
     margin-bottom: 100px; } }
 
@@ -570,7 +571,7 @@ body {
     max-width: 915px;
     margin: 0 501px;
     text-align: center;
-    margin-top: 47px; }
+    margin-top: 45px; }
   .smoothie__features {
     display: flex;
     flex-wrap: wrap;
@@ -597,6 +598,17 @@ body {
     letter-spacing: -0.5px;
     font-family: "Muli-ExtraBold";
     color: #f2612d; }
+
+@media screen and (max-width: 768px) {
+  .smoothie__title {
+    display: flex;
+    justify-content: center; }
+  .smoothie__text {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 45px; }
+  .smoothie__features {
+    width: 100%; } }
 
 .title {
   font-family: "Muli-ExtraBold";
@@ -669,14 +681,18 @@ body {
 
 @media screen and (max-width: 768px) {
   .about__wrapper {
-    display: block; } }
+    display: block;
+    margin-left: 20px; }
+  .about__box {
+    margin: 85px 30px 0; }
+  .about__btn {
+    margin-bottom: 50px; } }
 
 .products {
   display: flex; }
   .products__item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 129px 0 79px; }
   .products__btn {
@@ -761,6 +777,13 @@ body {
       right: 40px; }
   .story__img {
     margin-left: 205px; }
+
+@media screen and (max-width: 768px) {
+  .story__inner {
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .story__wrapper {
+    margin: 0 30px 40px; } }
 
 .testimonials {
   padding: 180px 0 80px;

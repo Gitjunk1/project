@@ -54,3 +54,17 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .story__inner{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .story__wrapper {
+        margin: 0 30px 40px;
+    }
+    .story__img {
+       
+    }
+}
+
+

@@ -1,5 +1,6 @@
 .smoothie {
     padding: 100px 0;
+   
 
     &__title {
         font-weight: 800;
@@ -11,7 +12,7 @@
        max-width: 915px;
        margin: 0 501px;
        text-align: center;
-        margin-top: 47px;
+        margin-top: 45px;
    }
    
    &__features {
@@ -50,4 +51,17 @@
    }
  }
  
- 
+ @media screen and (max-width: 768px) {
+    .smoothie__title {
+        display: flex;
+        justify-content: center;
+    }
+    .smoothie__text {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 45px;
+    }
+    .smoothie__features {
+        width: 100%;
+    }
+ }

@@ -108,6 +108,7 @@
 .header__burger-btn {
     display: block;
     border: none;
+    z-index: 99999;
 }
 .header__inner {
     margin-bottom: 100px;

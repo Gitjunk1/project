@@ -4,7 +4,6 @@
     &__item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         padding: 129px 0 79px;
     }
@@ -27,5 +26,8 @@
         }
     }
 
+}
+
+@media screen and (max-width: 768px) {
 }
 

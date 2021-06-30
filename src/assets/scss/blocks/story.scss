@@ -4,7 +4,9 @@
     &__inner {
         display: flex;
         justify-content: center;
-        position: relative;
+    
+        .story__box{
+            position: relative;
 
         &::after{
             content: "";
@@ -13,10 +15,12 @@
             background: url('./../images/story/Stamp.png');
             display: block;
             position: absolute;
-            top: 50%;
-            left: 52%;
-            transform: translate(-50%, -122%);
+            top: 0;
+            left: 0;
+            transform: translate(10%, 10%);
         }
+    }
+
     }
         
     &__title {
@@ -62,9 +66,14 @@
     .story__wrapper {
         margin: 0 30px 40px;
     }
-    .story__img {
-       
+        .story__box{
+            position: relative;
+
+        &::after{
+            position: absolute;
+        }
     }
+
 }
 
 

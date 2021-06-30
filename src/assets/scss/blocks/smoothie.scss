@@ -10,7 +10,7 @@
    
     &__text {
        max-width: 915px;
-       margin: 0 501px;
+       margin: 0 auto;
        text-align: center;
         margin-top: 45px;
    }
@@ -61,7 +61,7 @@
         margin: 0 auto;
         margin-top: 45px;
     }
-    .smoothie__features {
-        width: 100%;
+    .smoothie__name {
+        width: calc(50% - 2px);
     }
  }

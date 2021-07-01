@@ -701,7 +701,7 @@ body {
 
 .smoothie__text {
     max-width: 915px;
-    margin: 0 501px;
+    margin: 0 auto;
     text-align: center;
     margin-top: 45px;
 }
@@ -761,8 +761,8 @@ body {
         margin-top: 45px;
     }
 
-    .smoothie__features {
-        width: 100%;
+    .smoothie__name {
+        width: calc(50% - 2px);
     }
 }
 
@@ -897,6 +897,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding: 129px 0 79px;
+    min-width: 300px;
 }
 
 .products__btn {
@@ -915,6 +916,12 @@ body {
     position: absolute;
     top: 22px;
     right: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .products {
+        overflow-x: auto;
+    }
 }
 
 .item--chocolate {
@@ -962,20 +969,23 @@ body {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.story__inner .story__box {
     position: relative;
 }
 
-.story__inner::after {
+.story__inner .story__box::after {
     content: "";
     width: 290px;
     height: 216px;
     background: url("./../images/story/Stamp.png");
     display: block;
     position: absolute;
-    top: 50%;
-    left: 52%;
-    -webkit-transform: translate(-50%, -122%);
-    transform: translate(-50%, -122%);
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(10%, 10%);
+    transform: translate(10%, 10%);
 }
 
 .story__title {
@@ -1019,6 +1029,14 @@ body {
 
     .story__wrapper {
         margin: 0 30px 40px;
+    }
+
+    .story__box {
+        position: relative;
+    }
+
+    .story__box::after {
+        position: absolute;
     }
 }
 
@@ -1120,11 +1138,8 @@ body {
 }
 
 .testimonials__btn:nth-child(2)::after {
-    transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .testimonials__btn::after {
@@ -1134,11 +1149,40 @@ body {
     background: url("./../images/testemonials/left-arrow.png");
     position: absolute;
     left: -25px;
-    transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials {
+        padding-top: 100px;
+    }
+
+    .testimonials::before {
+        display: none;
+    }
+
+    .testimonials__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .testimonials__box {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-top: 80px;
+    }
+
+    .testimonials__control {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
 }
 
 .blog {

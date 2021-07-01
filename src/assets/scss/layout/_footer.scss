@@ -8,6 +8,10 @@
     &__logo {
         margin: 133px 0 182px 103px;
     }
+
+    &__inner {
+        margin: 0 auto;
+    }
     
     &__info {
         margin-left: 275px
@@ -53,5 +57,34 @@
         line-height: 2.69;
         letter-spacing: 0.26px;
         color: #af8a82;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer__top {
+display: flex;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+flex-direction: column;
+justify-content: flex-end;
+padding-top: 50px;
+}
+.footer__logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    }
+    .footer__inner {
+        display: flex;
+        margin: 0 auto;
+
+    }
+    .footer__info {
+        margin: 0 auto;
+    }
+    .footer__subscribe {
+        margin: 0 auto;
     }
 }

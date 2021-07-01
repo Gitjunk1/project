@@ -75,3 +75,22 @@
  
 }
 
+
+@media screen and (max-width: 768px) {
+    .blog__wrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .blog__subtitle {
+        &::before {
+            display: none;
+        }
+}
+.blog__discription {
+    padding-top: 20px;
+}
+    }
+
+
+
